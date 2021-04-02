@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="https://cdn.glitch.com/994776d1-24fa-40d8-816e-35ee67658cd1%2Fandroid-chrome-512x512.png?v=1617335816413" />
+    <meta property="og:site_name" content="MeewMeew"/>
+    <meta property="og:description" content="By ProCoderMew"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.glitch.com/994776d1-24fa-40d8-816e-35ee67658cd1%2Fapple-touch-icon.png?v=1617335816221">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/994776d1-24fa-40d8-816e-35ee67658cd1%2Ffavicon-32x32.png?v=1617335816222">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/994776d1-24fa-40d8-816e-35ee67658cd1%2Ffavicon-16x16.png?v=1617335816222">
+    <link rel="manifest" href="/site.webmanifest">        
+    <title>MeewMeew</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+        .container{
+            max-width: auto;
+            margin: 0 auto;
+            padding: 180px;
+            text-align: center;
+        }				
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="font-size: 150px; ">
+          <script type="text/javascript">
+          farbbibliothek = new Array();
+          farbbibliothek[0] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040");
+					farbbibliothek[1] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040");
+					farbbibliothek[2] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040");
+          farben = farbbibliothek[0];
+          function farbschrift(){for(var b=0;b<Buchstabe.length;b++){document.all["a"+b].style.color=farben[b]}farbverlauf()}function string2array(b){Buchstabe=new Array();while(farben.length<b.length){farben=farben.concat(farben)}k=0;while(k<=b.length){Buchstabe[k]=b.charAt(k);k++}}function divserzeugen(){for(var b=0;b<Buchstabe.length;b++){document.write("<span id='a"+b+"' class='a"+b+"'><b>"+Buchstabe[b]+"</b></span>")}farbschrift()}var a=1;function farbverlauf(){for(var b=0;b<farben.length;b++){farben[b-1]=farben[b]}farben[farben.length-1]=farben[-1];setTimeout("farbschrift()",30)}var farbsatz=1;function farbtauscher(){farben=farbbibliothek[farbsatz];while(farben.length<text.length){farben=farben.concat(farben)}farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001))}setInterval("farbtauscher()",5000);
+          text= `MEEWMEEW`;
+          string2array(text);
+          divserzeugen();                  
+          </script>
+        </div> 
+    </div> 
+    <div style="display:none">
+      <audio id="audio" src="https://cdn.glitch.com/3f68d689-1274-496b-8408-ee36d19cbe46%2Fnhung_bai_nhac_lofi_tieng_anh_cuc_chill_hay_nhat_nhac_lofi_chill_tik_tok_nhe_nhang_-9059521856486741828.mp3?v=1615828073880" controls="controls" autoplay></audio>
+    </div>
+    <script>
+        document.addEventListener('keydown', function (event) {
+          if (event.keyCode === 13) {
+            play();
+          }
+        })
+        document.addEventListener('mousemove', () => play())
+        document.addEventListener('mouseup', () => play())
+        document.addEventListener('mousedown', () => play())
+        document.addEventListener('click', () => play())
+        function play() {document.getElementById('audio').play();}
+    </script>
+</body>
+</html>

@@ -43,7 +43,7 @@
         </div> 
     </div> 
     <div style="display:none">
-      <audio id="audio" src="https://cdn.glitch.com/3f68d689-1274-496b-8408-ee36d19cbe46%2Fnhung_bai_nhac_lofi_tieng_anh_cuc_chill_hay_nhat_nhac_lofi_chill_tik_tok_nhe_nhang_-9059521856486741828.mp3?v=1615828073880" controls="controls" autoplay></audio>
+      <audio id="audio" src="https://cdn.glitch.com/818a2872-406d-490e-bb2e-2ae11448ca25%2Fmusic.mp3?v=1628153023935" controls="controls" autoplay></audio>
     </div>
     <script>
         document.addEventListener('keydown', function (event) {
@@ -51,10 +51,10 @@
             play();
           }
         })
-        document.addEventListener('mousemove', () => play())
-        document.addEventListener('mouseup', () => play())
-        document.addEventListener('mousedown', () => play())
-        document.addEventListener('click', () => play())
+        document.addEventListener('mousemove', play)
+        document.addEventListener('mouseup', play)
+        document.addEventListener('mousedown', play)
+        document.addEventListener('click', play)
         function play() {document.getElementById('audio').play();}
     </script>
 </body>
